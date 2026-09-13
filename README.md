@@ -80,7 +80,11 @@ The final sample dataset contained participant identifiers, survey wave informat
 ## Database Structure
 
 Create a database in PostgreSQL named `omop_training`.
+
 Then, create 3 schemas
 - cdm_schema - `nids_cdm`
 - results_schema - `nids_results`
 - vocabulary_schema - `vocabulary`
+
+> [!NOTE]
+> If you're using PostgreSQL as the ETL tool, you will need to create an additional schema for the data named `nids_data`. If you're using R, the 3 schemas are enough, since one will pre-load the data into the R environment.
