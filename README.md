@@ -32,11 +32,7 @@ Inspired by [Cookie Cutter Data Science](https://github.com/drivendata/cookiecut
 │
 ├── Presentations           <- Folder for session presentations
 │
-├── Atlas Installation   <- Folder for Configuration of Atlas
-│   ├── 1.WSL Installation
-│   ├── 2.Docker Installation
-│   ├── 3.OHDSI-Broadsea_PgAdmin-Container-Atlas-Configuration          
-│   └── 4.Restore-CDM-to-AtlasDB_Generate-Results_WebAPIConfiguration
+├── OHDSI Tools Installation   <- Folder for OHDSI OMOP Tools Installation Guide 
 │
 ├── Data                   <- Folder for the sample data and its data dictionary    
 │
@@ -63,7 +59,13 @@ Inspired by [Cookie Cutter Data Science](https://github.com/drivendata/cookiecut
 │   ├── 7.etl_to_omop
 │   ├── 8.dqd
 │   ├── 9.achilles_results           
-│   └── 10.atlas_analysis    
+│   └── 10.atlas_analysis
+│
+├── Atlas Installation   <- Folder for Configuration of Atlas
+│   ├── 1.WSL Installation
+│   ├── 2.Docker Installation
+│   ├── 3.OHDSI-Broadsea_PgAdmin-Container-Atlas-Configuration          
+│   └── 4.Restore-CDM-to-AtlasDB_Generate-Results_WebAPIConfiguration    
 │
 └──
 ```
