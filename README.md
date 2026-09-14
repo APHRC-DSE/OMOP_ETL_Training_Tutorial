@@ -21,8 +21,6 @@ Download and install
 - [Usagi](https://github.com/OHDSI/Usagi)
 - [DBMS(PostgreSQL)](https://www.postgresql.org/download/)
 - [**R software**](https://www.r-project.org/), followed by [**Rtools**](https://cran.r-project.org/bin/windows/Rtools/) corresponding to your R version then [**RStudio/Posit IDE**](https://posit.co/download/rstudio-desktop/).
-- [Terminal Docker Installation via WSL](https://docs.docker.com/get-docker/).
-- [OHDSI Broadsea](https://github.com/OHDSI/Broadsea).
 
 ## Repo Structure
 
@@ -32,7 +30,13 @@ Inspired by [Cookie Cutter Data Science](https://github.com/drivendata/cookiecut
 ├── LICENSE
 ├── README.md              <- The top-level README for users.
 │
-├── Presentations           <- Folder for session presentations 
+├── Presentations           <- Folder for session presentations
+│
+├── Atlas Installation   <- Folder for Configuration of Atlas
+│   ├── 1.WSL Installation
+│   ├── 2.Docker Installation
+│   ├── 3.OHDSI-Broadsea_PgAdmin-Container-Atlas-Configuration          
+│   └── 4.Restore-CDM-to-AtlasDB_Generate-Results_WebAPIConfiguration
 │
 ├── Data                   <- Folder for the sample data and its data dictionary    
 │
