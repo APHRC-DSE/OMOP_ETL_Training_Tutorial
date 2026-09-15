@@ -34,7 +34,9 @@ Inspired by [Cookie Cutter Data Science](https://github.com/drivendata/cookiecut
 │
 ├── OHDSI Tools Installation   <- Folder for OHDSI OMOP Tools Installation Guide 
 │
-├── Data                   <- Folder for the sample data and its data dictionary    
+├── Data                   <- Folder for the sample data and its data dictionary 
+│
+├── Usagi Mapping          <- Folder for the source code list and generated Usagi concept list
 │
 ├── SQL ETL Scripts     <- SQL ETL scripts for standardizing the source sample data to OMOP-CDM
 │   ├── data
