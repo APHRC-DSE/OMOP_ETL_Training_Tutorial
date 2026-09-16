@@ -95,4 +95,4 @@ Then, create 3 schemas
 - vocabulary_schema - `vocabulary`
 
 > [!NOTE]
-> If you're using PostgreSQL as the ETL tool, you will need to create an additional schema for the data named `nids_data`. If you're using R, the 3 schemas are enough, since one will pre-load the data into the R environment.
+> If you're using PostgreSQL as the ETL tool, you will use an additional schema for the data named `public`. If you're using R, the 3 schemas are enough, since one will pre-load the data into the R environment.
