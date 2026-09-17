@@ -2,7 +2,7 @@
 #1.Installing Required packages
 
 #utils::install.packages("DatabaseConnector")
-##utils::install.packages("rstudioapi")
+#utils::install.packages("rstudioapi")
 #utils::install.packages("remotes")
 #remotes::install_github("OHDSI/DataQualityDashboard")
 
