@@ -1,0 +1,102 @@
+DBMS:
+postgresql
+
+Error:
+org.postgresql.util.PSQLException: ERROR: relation "nids_results.cohort_definition" does not exist
+  Position: 409
+
+SQL:
+/*********
+MEASURE_VALUE_COMPLETENESS
+Computing number of null values and the proportion to total records per field
+Parameters used in this template:
+schema = nids_results
+cdmTableName = COHORT_DEFINITION
+cdmFieldName = SUBJECT_CONCEPT_ID
+**********/
+SELECT 
+	num_violated_rows, 
+	CASE 
+		WHEN denominator.num_rows = 0 THEN 0 
+		ELSE 1.0*num_violated_rows/denominator.num_rows 
+	END AS pct_violated_rows, 
+    denominator.num_rows AS num_denominator_rows
+FROM
+(
+	SELECT 
+		COUNT(violated_rows.violating_field) AS num_violated_rows
+	FROM
+	(
+		/*violatedRowsBegin*/
+		SELECT 
+			'COHORT_DEFINITION.SUBJECT_CONCEPT_ID' AS violating_field, 
+			cdmTable.* 
+		FROM nids_results.COHORT_DEFINITION cdmTable
+		WHERE cdmTable.SUBJECT_CONCEPT_ID IS NULL
+		/*violatedRowsEnd*/
+	) violated_rows
+) violated_row_count,
+( 
+	SELECT 
+		COUNT(*) AS num_rows
+	FROM nids_results.COHORT_DEFINITION cdmTable
+) denominator
+;
+
+
+R version:
+R version 4.5.0 (2025-04-11 ucrt)
+
+Platform:
+x86_64-w64-mingw32
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- DbDiagnostics (1.5.1)
+- ParallelLogger (3.5.1)
+- Achilles (1.8)
+- DataQualityDashboard (2.8.9)
+- CommonDataModel (1.0.1)
+- rJava (1.0-14)
+- SqlRender (1.19.4)
+- CDMConnector (2.5.0)
+- remotes (2.5.0)
+- glue (1.8.0)
+- DatabaseConnector (7.1.0)
+- devtools (2.4.6)
+- usethis (3.2.1)
+- DBI (1.3.0)
+- RPostgres (1.4.10)
+- data.table (1.18.2.1)
+- writexl (1.5.4)
+- readxl (1.4.5)
+- scales (1.4.0)
+- ggpubr (0.6.3)
+- gridExtra (2.3)
+- officer (0.7.3)
+- sjlabelled (1.2.0)
+- labelled (2.16.0)
+- flextable (0.9.11)
+- gtsummary (2.5.0)
+- kableExtra (1.4.0)
+- knitr (1.51)
+- janitor (2.2.1)
+- haven (2.5.5)
+- lubridate (1.9.5)
+- forcats (1.0.1)
+- stringr (1.6.0)
+- dplyr (1.2.0)
+- purrr (1.2.1)
+- readr (2.2.0)
+- tidyr (1.3.2)
+- tibble (3.3.1)
+- ggplot2 (4.0.2)
+- tidyverse (2.0.0)
