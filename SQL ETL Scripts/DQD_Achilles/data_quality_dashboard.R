@@ -51,7 +51,7 @@ cd_dqd <- DatabaseConnector::createConnectionDetails(
   dbms = "postgresql",
   server = paste0("localhost","/",database_name),
   user = "postgres",
-  password = Sys.getenv("postgres_password"),
+  password = Sys.getenv("postgres_password"), #put your actual password here if you haven't used the environ file
   port = 5432,
   pathToDriver = driver_path  #path to jdbc drivers
   )
