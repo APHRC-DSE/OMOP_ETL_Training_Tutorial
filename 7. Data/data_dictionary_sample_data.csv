@@ -1,0 +1,45 @@
+variable,label
+pid,Person identifier
+wave_id,Wave identifier
+interview_date,Date of interview
+date_of_birth,Date of Birth
+prov2001,Location (Province)
+best_gen,Gender
+best_race,Race
+age_yrs,Age (years)
+age_group,Age Grouped
+education_status,Highest level of education
+marital_status,Marital status
+occupation_status,Occupation status
+a_rel,Religious affiliation
+a_emobth,k1 - Respondent was unusually bothered in past week?
+a_emomnd,k2 - Respondent had trouble focusing in past week?
+a_emodep,k3 - Respondent felt depressed in past week?
+a_emoeff,k4 - Respondent felt that everything was an effort in past week?
+a_emohope,k5 - Respondent felt hopeful about the future in past week?
+a_emofear,k6 - Respondent felt fearful in past week?
+a_emoslp,k7 - Respondent's sleep was restless in past week?
+a_emohap,k8 - Respondent was happy in past week?
+a_emolone,k9 - Respondent felt lonely in past week?
+a_emogo,k10 - Respondent could not get going
+cesd_total_score,CESD-10 total score
+cesd_depression,CESD-10 depression
+adult_bmi,BMI (kg/m2)
+adult_bmi_group,BMI (kg/m2) grouped
+adult_waist,Waist measure (cm)
+adult_bp_systolic,Systolic Blood Pressure (SYS.mmHg)
+adult_bp_diastolic,Diastolic Blood Pressure (DIA.mmHg)
+adult_bp_pulse,Blood Pressure: Pulse (bpm)
+a_hltb,Diagnosed with TB
+a_hlbp,Diagnosed with high blood pressure
+a_hldia,Diagnosed with Diabetes
+a_hlstrk,Diagnosed with a stroke
+a_hlast,Diagnosed with asthma
+a_hlhrt,Diagnosed with heart problems
+a_hlcan,Diagnosed with cancer
+hiv_aids,Diagnosed with HIV/AIDS
+epilepsy,Diagnosed with Epilepsy
+country,Country
+producer,Producer
+interviewer_id,Interviewer identifier
+interviewer_gender,Interviewer Gender
