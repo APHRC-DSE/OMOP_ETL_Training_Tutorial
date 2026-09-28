@@ -117,9 +117,3 @@ Then, create 3 schemas
 > [!NOTE]
 > If you're using PostgreSQL as the ETL tool, you will use an additional schema for the data named `public`. If you're using R, the 3 schemas are enough, since one will pre-load the data into the R environment.
 
-
-
-0 directories, 0 files
-7.Data  [error opening dir]
-
-0 directories, 0 files
