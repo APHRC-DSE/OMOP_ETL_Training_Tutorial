@@ -89,7 +89,8 @@ Inspired by [Cookie Cutter Data Science](https://github.com/drivendata/cookiecut
 │   ├── OMOP_Standardized_Vocabularies.pdf
 │   ├── WhiteRabbit.pptx
 │   └── placeholder.txt
-├── 
+│
+└──
 ```
 
 ## Sample Data
