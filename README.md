@@ -71,13 +71,13 @@ Inspired by [Cookie Cutter Data Science](https://github.com/drivendata/cookiecut
 │   ├── Output
 │   ├── data
 │   └── main.R
-├── 6. Atlas Installation
+├── 6.Atlas Installation
 │   ├── 1.WSL Installation
 │   ├── 2.Docker Installation
 │   ├── 3.OHDSI-Broadsea_PgAdmin-Container-Atlas-Configuration
 │   ├── 4.Restore-CDM-to-AtlasDB_Generate-Results_WebAPIConfiguration
 │   └── README.md
-├── 7. Data
+├── 7.Data
 │   ├── data_dictionary_sample_data.csv
 │   └── sample_data.csv
 ├── 8.Presentations
